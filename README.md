@@ -1,36 +1,56 @@
-# FriendZone - A full-stack realtime messaging chat application
+# FriendZone - Real-time Chat Application
 
-A project to learn modern full-stack development made by Josh.
+FriendZone is a modern real-time chat application built with **Next.js**, **TypeScript**, **Redis**, and **Pusher**, featuring instant messaging, dynamic user interfaces, and responsive design.
+
+---
 
 ## Features
 
-- Realtime messaging
-- Adding friends and sending friend requests via email
-- Performant database queries with Redis
-- Responsive UI built with TailwindCSS
-- Protection of sensitive routes
-- Google authentication
+- Real-time messaging using **Pusher**.
+- Persistent chat history stored in **Redis**.
+- Responsive UI with **Next.js** and **Tailwind CSS**.
+- User authentication via **NextAuth.js**.
+- Profile pictures and message timestamps.
+- Smooth scrolling and message alignment for conversation clarity.
 
-- Built with TypeScript
-- TailwindCSS
-- Icons from Lucide
+---
 
-- Class merging with tailwind-merge
-- Conditional classes with clsx
-- Variants with class-variance-authority
+## Tech Stack
 
-## Things I forgot in the video
-- [Adding metadata to some pages](https://github.com/joschan21/nextjs-realtime-chat/blob/master/src/app/(dashboard)/dashboard/chat/%5BchatId%5D/page.tsx)
-- [Adding a favicon](https://github.com/joschan21/nextjs-realtime-chat/blob/master/public/favicon.ico)
+- **Frontend:** Next.js, TypeScript, Tailwind CSS  
+- **Backend:** Next.js API routes, Redis  
+- **Real-time Communication:** Pusher  
+- **Authentication:** NextAuth.js  
+- **Other Libraries:** date-fns, axios, react-textarea-autosize  
 
-## Acknowledgements
+---
 
-- [Awesome Button UI Component](https://ui.shadcn.com/)
+## Getting Started
 
-## Feedback
+### Prerequisites
 
-If you have any feedback, please reach out to me at admin@wordful.ai
+- Node.js v18+  
+- Redis server  
+- Pusher account  
 
-## License
+### Installation
 
-[MIT](https://choosealicense.com/licenses/mit/)
+```bash
+git clone https://github.com/yourusername/friendzone.git
+cd friendzone
+npm install
+
+NEXTAUTH_SECRET=your_nextauth_secret
+NEXTAUTH_URL=http://localhost:3000
+REDIS_URL=redis://localhost:6379
+PUSHER_APP_ID=your_pusher_app_id
+PUSHER_KEY=your_pusher_key
+PUSHER_SECRET=your_pusher_secret
+PUSHER_CLUSTER=your_pusher_cluster
+
+npm run dev
+```
+
+<img width="1918" height="906" alt="image" src="https://github.com/user-attachments/assets/d5f35b90-20c0-481d-b3d2-eb931655ff22" />
+
+
